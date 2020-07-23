@@ -104,7 +104,7 @@ The following table shows notes, courses, challenges, and tutorials that can be 
 | [SecuritySift] Windows Exploit Dev #1: Basics| Tutorial | http://www.securitysift.com/windows-exploit-development-part-1-basics/ |
 | [Corelan] Exploit Writing #1: Stack Based Overflows | Tutorial | https://www.corelan.be/index.php/2009/07/19/exploit-writing-tutorial-part-1-stack-based-overflows/ |
 | [SecuritySift] Windows Exploit Dev #2: Stack Based Overflows | Tutorial | http://www.securitysift.com/windows-exploit-development-part-2-intro-stack-overflow/ |
-| [SecuritySift] Windows Exploit Dev #3: Changing Offsets and Rebased Modules | http://www.securitysift.com/windows-exploit-development-part-3-changing-offsets-and-rebased-modules/ |
+| [SecuritySift] Windows Exploit Dev #3: Changing Offsets and Rebased Modules | Tutorial | http://www.securitysift.com/windows-exploit-development-part-3-changing-offsets-and-rebased-modules/ |
 | [Corelan] Exploit Writing #2: Shellcode Jumps | Tutorial | https://www.corelan.be/index.php/2009/07/23/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-2/ |
 | [SecuritySift] Windows Exploit Dev #4: Locating Shellcode Jumps | Tutorial | http://www.securitysift.com/windows-exploit-development-part-4-locating-shellcode-jumps/ |
 | [InfoSec Institute] Stack Based Buffer Overflow #1: Intro | Tutorial | http://resources.infosecinstitute.com/stack-based-buffer-overflow-tutorial-part-1-introduction/ |
