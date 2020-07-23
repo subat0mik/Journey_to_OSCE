@@ -1,122 +1,210 @@
 # OSCE PREP
 
-This repository contains a list of freely available resources that can be used as a pre-requisite before enrolling in Offensive Security's [Cracking the Perimeter (CTP)](https://www.offensive-security.com/information-security-training/cracking-the-perimeter/) course and [OSCE](https://www.offensive-security.com/information-security-certifications/osce-offensive-security-certified-expert/) certification.
+This repository contains a list of free or inexpensive resources that can be used as preparation for Offensive Security's [Cracking the Perimeter (CTP)](https://www.offensive-security.com/information-security-training/cracking-the-perimeter/) course and [OSCE](https://www.offensive-security.com/information-security-certifications/osce-offensive-security-certified-expert/) certification.
 
 
-The following table shows notes, courses, challenges, and tutorials that can taken in preparation for the OSCE. **It should be noted that the content within multiple sources do overlap each other so not all of these resources are needed**.
+The following table shows notes, courses, challenges, and tutorials that can be used in preparation for the OSCE. **It should be noted that the content within multiple sources do overlap each other so not all of these resources are needed**. [Sam Sanoop][Snoopy] started this list and I noticed that there is more to be done!
+
+
+### Debugging
+
+| Name | Type | Link |
+| ----- | ----- | --- |
+| [Pentester Academy] (SecurityTube) GNU Debugger Megaprimer | Video Series | https://www.pentesteracademy.com/course?id=4 |
+| [InfoSec Institude] Exploit Dev Debugging Fundamentals | Blog | https://resources.infosecinstitute.com/debugging-fundamentals-for-exploit-development/ |
+| WinDBG  Commands | Cheatsheet | https://briolidz.wordpress.com/2013/11/17/windbg-some-debugging-commands/ |
+| [Corelan] Exploit Writing Tutorial part 5: How debugger modules & plugins can speed up basic exploit development | Blog  | http://www.corelan.be/index.php/2009/09/05/exploit-writing-tutorial-part-5-how-debugger-modules-plugins-can-speed-up-basic-exploit-development/ | 
+| [Corelan] Mona.py The Manual | Cheatsheet | https://www.corelan.be/index.php/2011/07/14/mona-py-the-manual/r | 
+| Mona py : The Exploit Writer's Swiss Army Knife | Presentation | https://www.youtube.com/watch?v=y2zrEAwmdws | 
+
 
 ### Web Application Security
 
-| Order | Name | Type | Link |
-|--- | ----- | ----- | --- |
-| 1 | PayloadsAllTheThings Directory Traversal CheatSheet | CheatSheet | https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Directory%20Traversal |
-| 2 | PayloadsAllTheThings XSS CheatSheet | CheatSheet | https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection |
-| 3 | XSS Payloads | Payloads | http://www.xss-payloads.com/ |
-| 4 | XSS to Domain Admin | Webinar | https://www.elearnsecurity.com/resources/webinar_video/xss-to-domain-admin/ |
-| 5 | LFI to RCE Exploit with Perl Script | Paper | https://www.exploit-db.com/papers/12992 |
-| 6 | Using XSS to bypass CSRF protection | Paper | https://www.exploit-db.com/docs/13534 |
-| 7 | Local File Inclusion (LFI) | Paper | https://www.exploit-db.com/docs/english/40992-web-app-penetration-testing---local-file-inclusion-(lfi).pdf |
+| Name | Type | Link |
+| ----- | ----- | --- |
+| PayloadsAllTheThings Directory Traversal CheatSheet | CheatSheet | https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Directory%20Traversal |
+| PayloadsAllTheThings XSS CheatSheet | CheatSheet | https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection |
+| XSS Payloads | Payloads | http://www.xss-payloads.com/ |
+| [eLearnSecurity] XSS to Domain Admin | Webinar | https://www.elearnsecurity.com/resources/webinar_video/xss-to-domain-admin/ |
+| Advanced XSS Knolwedge | Paper | https://www.exploit-db.com/papers/13646 |
+| LFI to RCE Exploit with Perl Script | Paper | https://www.exploit-db.com/papers/12992 |
+| Using XSS to bypass CSRF protection | Paper | https://www.exploit-db.com/docs/13534 |
+| Local File Inclusion (LFI) | Paper | https://www.exploit-db.com/docs/english/40992-web-app-penetration-testing---local-file-inclusion-(lfi).pdf |
+| Local File Inclusion | Blog | https://medium.com/bugbountywriteup/cvv-1-local-file-inclusion-ebc48e0e479a
+| Web Application Hacker's Handbook | Book | https://www.amazon.com/Web-Application-Hackers-Handbook-Exploiting/dp/1118026470/ref=sr_1_1?crid=TR4RN22XANB0&dchild=1&keywords=web+app+hackers+handbook&qid=1595526654&sprefix=web+app+hackers%2Caps%2C294&sr=8-1 |
 
 
+### AV Bypass / Evasion:
 
-### Anti Detection
-
-| Order | Name | Type | Link |
-|--- | ----- | ----- | --- |
-| 1 | Backdooring PE Files - Part 1 | Blog | http://sector876.blogspot.co.uk/2013/03/backdooring-pe-files-part-1.html |
-| 2 | Backdooring PE Files - Part 2 | Blog | http://sector876.blogspot.co.uk/2013/03/backdooring-pe-files-part-2.html |
-| 3 | Backdooring Windows EXEs for Fun and Profit | Blog | http://ly0n.me/2015/07/09/backdooring-windows-exes-for-fun-and-profit-part-1/ |
-| 4 | Art of Anti Detection – 1 | Paper | https://www.exploit-db.com/docs/40900.pdf |
-| 5 | Art of Anti Detection – 2 | Paper | https://www.exploit-db.com/docs/41129.pdf |
-| 6 | Art of Anti Detection – 2 | Paper | https://www.exploit-db.com/docs/41129.pdf |
-| 7 | Art of Anti Detection – 1 Blog | Blog | https://pentest.blog/art-of-anti-detection-1-introduction-to-av-detection-techniques/ |
-| 8 | Art of Anti Detection – 2 Blog | Blog | https://pentest.blog/art-of-anti-detection-2-pe-backdoor-manufacturing/  |
-| 9 | Art of Anti Detection – 3 Blog | Blog | https://pentest.blog/art-of-anti-detection-3-shellcode-alchemy/  |
-| 10 | Art of Anti Detection – 4 Blog | Blog | https://pentest.blog/art-of-anti-detection-4-self-defense/   |
+| Name | Type | Link |
+| ----- | ----- | --- |
+| Art of Anti Detection #1 - Intro to AV & Detection Techniques | Paper | http://web.archive.org/web/20161213055552/https://www.exploit-db.com/docs/40900.pdf |
+| Art of Anti Detection #1 - Intro to AV & Detection Techniques | Blog | https://pentest.blog/art-of-anti-detection-1-introduction-to-av-detection-techniques/ |
+| Bypassing AV Scanners | Paper | https://dl.packetstormsecurity.net/papers/bypass/bypassing-av.pdf |
+| [SecuritySift] peCloak.py - An Experiment in AV Evasion | Blog | https://www.securitysift.com/pecloak-py-an-experiment-in-av-evasion/ |
 
 
-### Assembly Language
+### Backdooring PEs:
 
-| Order | Name | Type | Link |
-|--- | ----- | ----- | --- |
-| 1 | Skullsecurity Assembly Language Wiki | Blog | https://wiki.skullsecurity.org/index.php?title=Assembly |
-| 2 | Sensepost A Crash Course in x86 Assembly for Reverse Engineers | Paper | https://sensepost.com/blogstatic/2014/01/SensePost_crash_course_in_x86_assembly-.pdf |
-| 3 | SecurityTube Windows Assembly Language Megaprimer | Videos | http://www.securitytube.net/groups?operation=view&groupId=6 |
+| Name | Type | Link |
+| ----- | ----- | --- |
+| Portable Executable File Format | Blog | https://blog.kowalczyk.info/articles/pefileformat.html |
+| Understanding PE Structure, The Layman's Way | Blog | https://tech-zealots.com/malware-analysis/pe-portable-executable-structure-malware-analysis-part-2/ |
+| Backdooring PE Files - Part 1 | Blog | http://sector876.blogspot.co.uk/2013/03/backdooring-pe-files-part-1.html |
+| Backdooring PE Files - Part 2 | Blog | http://sector876.blogspot.co.uk/2013/03/backdooring-pe-files-part-2.html |
+| Beginner's Guide to Codecaves | Blog | https://www.codeproject.com/Articles/20240/The-Beginners-Guide-to-Codecaves |
+| Backdooring Windows EXEs for Fun and Profit | Blog | http://ly0n.me/2015/07/09/backdooring-windows-exes-for-fun-and-profit-part-1/ |
+| Art of Anti Detection #2 - PE Backdoor Manufacturing | Paper | http://web.archive.org/web/20170401142227/https://www.exploit-db.com/docs/41129.pdf |
+| Art of Anti Detection #2 - PE Backdoor Manufacturing | Blog | https://pentest.blog/art-of-anti-detection-2-pe-backdoor-manufacturing/ |
 
 
+### Assembly Language & Shellcode
 
+| Name | Type | Link |
+| ----- | ----- | --- |
+| [Pentester Academy] x86 Assembly Language and Shellcoding on Linux (SLAE) | Course | https://www.pentesteracademy.com/course?id=3 | 
+| X86 Assembly Guide | Paper | https://www.cs.virginia.edu/~evans/cs216/guides/x86.html |
+| NASM Tutorial | Tutorial | https://cs.lmu.edu/~ray/notes/nasmtutorial/ |
+| Art of Anti Detection #3 Shellcode Alchemy | Blog | https://pentest.blog/art-of-anti-detection-3-shellcode-alchemy/
+| [Skullsecurity] Assembly Language Wiki | Blog | https://wiki.skullsecurity.org/index.php?title=Assembly |
+| [Sensepost] A Crash Course in x86 Assembly for Reverse Engineers | Paper | https://sensepost.com/blogstatic/2014/01/SensePost_crash_course_in_x86_assembly-.pdf |
+| [Skape] Understanding Windows Shellcode | Paper | http://www.hick.org/code/skape/papers/win32-shellcode.pdf |
+| [Corelan] Intro to Win32 Shellcoding | Tutorial | https://www.corelan.be/index.php/2010/02/25/exploit-writing-tutorial-part-9-introduction-to-win32-shellcoding/ |
+| [FuzzySec] Writing Win32 Shellcode | Tutorial | http://fuzzysecurity.com/tutorials/expDev/6.html |
+| Basics of Windows Shellcode Writing | Tutorial | https://idafchev.github.io/exploit/2017/09/26/writing_windows_shellcode.html | 
+| Create Custom Shellcode Using the System() Function | Tutorial | http://www.gosecure.it/blog/art/452/sec/create-a-custom-shellcode-using-system-function/ |
+| Windows Reverse Shell Shellcode | Tutorial | http://sh3llc0d3r.com/windows-reverse-shell-shellcode-i/ |
+| Shellcode: x86 Optimizations | Tutorial | https://modexp.wordpress.com/2017/06/07/x86-trix-one/ |
+| Shellcoding for Linux and Windows | Tutorial | http://www.vividmachines.com/shellcode/shellcode.html |
+| x86 Instruction Set Reference | Reference | https://c9x.me/x86/ |
+| x86 Opcode and Instruction Reference | Reference | http://ref.x86asm.net/coder32.html |
+| The Shellcoder's Handbook | Book | https://www.amazon.com/Shellcoders-Handbook-Discovering-Exploiting-Security/dp/047008023X/ref=sr_1_2?crid=39CY4217DENQG&dchild=1&keywords=shellcoders+handbook&qid=1595526424&sprefix=shellcod%2Caps%2C284&sr=8-2 |
+| [Sam Bowne] Exploit Development (College Course using The Shellcoder's Handbook) | Course | https://samsclass.info/127/127_S17.shtml |
 
 
 ### Fuzzing
 
-| Order | Name | Type | Link |
-|--- | ----- | ----- | --- |
-| 1 | Introduction to Network Protocol Fuzzing & Buffer Overflow Exploitation | Blog | https://blog.own.sh/introduction-to-network-protocol-fuzzing-buffer-overflow-exploitation/	 |
-| 2 | HowTo: ExploitDev Fuzzing | Blog | https://hansesecure.de/2018/03/howto-exploitdev-fuzzing/	 |
-| 3 | [VulnServer] Exploiting TRUN Command via Vanilla EIP Overwrite | Blog | https://captmeelo.com/exploitdev/osceprep/2018/06/27/vulnserver-trun.html	 |
-| 4 | CTP/OSCE Prep – Boofuzzing Vulnserver for EIP Overwrite | Blog | https://h0mbre.github.io/Boofuzz_to_EIP_Overwrite/#	 |
-| 5 | Boofuzz – A helpful guide (OSCE – CTP) | Blog | https://zeroaptitude.com/zerodetail/fuzzing-with-boofuzz/	|
+| Name | Type | Link |
+| ----- | ----- | --- |
+| [InfoSec Institute] Intro to Fuzzing | Tutorial | https://resources.infosecinstitute.com/intro-to-fuzzing/ |
+| [InfoSec Institute] Fuzzer Automation with Spike | Tutorial | http://resources.infosecinstitute.com/fuzzer-automation-with-spike/ |
+| Introduction to Network Protocol Fuzzing & Buffer Overflow Exploitation | Blog | https://blog.own.sh/introduction-to-network-protocol-fuzzing-buffer-overflow-exploitation/ |
+| Very Unofficial Dummies Guide to Scapy | Tutorial | https://theitgeekchronicles.files.wordpress.com/2012/05/scapyguide1.pdf |
+| HowTo: ExploitDev Fuzzing | Blog | https://hansesecure.de/2018/03/howto-exploitdev-fuzzing/	 |
+| [Vulnserver] Exploiting TRUN Command via Vanilla EIP Overwrite | Blog | https://captmeelo.com/exploitdev/osceprep/2018/06/27/vulnserver-trun.html	 |
+| [Vulnserver] Boofuzzing Vulnserver for EIP Overwrite | Blog | https://h0mbre.github.io/Boofuzz_to_EIP_Overwrite/#	 |
+| Boofuzz – A helpful guide (OSCE – CTP) | Blog | https://zeroaptitude.com/zerodetail/fuzzing-with-boofuzz/	|
+
+
+###Stack Based Overflow:
+| Name | Type | Link |
+| ----- | ----- | --- |
+| [FuzzySec] Windows Exploit Dev #1: Intro | Tutorial | https://www.fuzzysecurity.com/tutorials/expDev/1.html |
+| [FuzzySec] Windows Exploit Dev #2: Saved Return Pointer Overflows | Tutorial | https://www.fuzzysecurity.com/tutorials/expDev/2.html |
+| [SecuritySift] Windows Exploit Dev #1: Basics| Tutorial | http://www.securitysift.com/windows-exploit-development-part-1-basics/ |
+| [Corelan] Exploit Writing #1: Stack Based Overflows | Tutorial | https://www.corelan.be/index.php/2009/07/19/exploit-writing-tutorial-part-1-stack-based-overflows/ |
+| [SecuritySift] Windows Exploit Dev #2: Stack Based Overflows | Tutorial | http://www.securitysift.com/windows-exploit-development-part-2-intro-stack-overflow/ |
+| [SecuritySift] Windows Exploit Dev #3: Changing Offsets and Rebased Modules | http://www.securitysift.com/windows-exploit-development-part-3-changing-offsets-and-rebased-modules/ |
+| [Corelan] Exploit Writing #2: Shellcode Jumps | Tutorial | https://www.corelan.be/index.php/2009/07/23/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-2/ |
+| [SecuritySift] Windows Exploit Dev #4: Locating Shellcode Jumps | Tutorial | http://www.securitysift.com/windows-exploit-development-part-4-locating-shellcode-jumps/ |
+| [InfoSec Institute] Stack Based Buffer Overflow #1: Intro | Tutorial | http://resources.infosecinstitute.com/stack-based-buffer-overflow-tutorial-part-1-introduction/ |
+| [InfoSec Institute] tack Based Buffer Overflow #2: Exploit | Tutorial | http://resources.infosecinstitute.com/stack-based-buffer-overflow-tutorial-part-2-exploiting-the-stack-overflow/ |
+| [InfoSec Institute]Stack Based Buffer Overflow #3: Adding Shellcode | Tutorial | http://resources.infosecinstitute.com/stack-based-buffer-overflow-tutorial-part-2-exploiting-the-stack-overflow/ |
+
+
+###Structured Exception Handling (SEH) Overwrite:
+| Name | Type | Link |
+| ----- | ----- | --- |
+| [Corelan] Exploit Writing #3: SEH | Tutorial | https://www.corelan.be/index.php/2009/07/25/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-3-seh/ |
+| [Corelan] Exploit Writing #3B: SEH | Tutorial | https://www.corelan.be/index.php/2009/07/28/seh-based-exploit-writing-tutorial-continued-just-another-example-part-3b/ |
+| [FuzzySec] Windows Exploit Dev #3: SEH | Tutorial | http://fuzzysecurity.com/tutorials/expDev/3.html |
+| [SecuritySift] Windows Exploit Dev #6: SEH Exploits | Tutorial | http://www.securitysift.com/windows-exploit-development-part-6-seh-exploits/ |
+| [InfoSec Institute] SEH Based Overflow Exploit | Tutorial | https://resources.infosecinstitute.com/seh-exploit/#gref |
+| The Need for a POP POP RET Instruction Sequence | Blog | https://dkalemis.wordpress.com/2010/10/27/the-need-for-a-pop-pop-ret-instruction-sequence/ |
+| [Vulnserver] CTP/OSCE Prep - 'GMON' SEH Based Overflow | Blog | https://h0mbre.github.io/SEH_Based_Exploit/# |
+| [Vulnserver] GMON Command SEH Based Overflow Exploit | Blog | http://sh3llc0d3r.com/vulnserver-gmon-command-seh-based-overflow-exploit/ |
+| [Vulnserver] LTER - Extreme SEH Overwrite | Blog | https://www.doyler.net/security-not-included/vulnserver-lter-seh |
+| [Vulnserver] Exploiting GMON Command via SEH and Egghunter | Blog | https://captmeelo.com/exploitdev/osceprep/2018/06/30/vulnserver-gmon.html |
+
+
+###Egghunting
+| Name | Type | Link |
+| ----- | ----- | --- |
+| [Skape] Safely Searching Process Virtual Address Space | Paper | https://web.archive.org/web/20061010194043/http://www.hick.org/code/skape/papers/egghunt-shellcode.pdf |
+| [SecuritySift] Windows Exploit Dev #5: Locating Shellcode with Egghunting | Tutorial | http://www.securitysift.com/windows-exploit-development-part-5-locating-shellcode-egghunting/ |
+| [Corelan] Exploit Writing #8: Win32 Egghunting | Tutorial | https://www.corelan.be/index.php/2010/01/09/exploit-writing-tutorial-part-8-win32-egg-hunting/ |
+| [FuzzySec] Windows Exploit Dev #4: Egg Hunters | Tutorial | http://fuzzysecurity.com/tutorials/expDev/4.html |
+| [Vulnserver] GMON Egghunter with Character Restrictions | Tutorial | https://h0mbre.github.io/Badchars_Egghunter_SEH_Exploit/ |
+| [HackSys Team] Egghunter | Paper | http://web.archive.org/web/20150717003732/https://www.exploit-db.com/docs/18482.pdf |
+| [SecuritySift] EggSandwich - An Egghunter with Integrity | Blog | https://www.securitysift.com/eggsandwich-egghunter-integrity/ |
+
+
+###Address Space Layout Randomization (ASLR) Bypass
+| Name | Type | Link |
+| ----- | ----- | --- |
+| [Corelan] Exploit Writing #6: Bypassing Stack Cookies, SafeSEH, SEHOP, HW DEP, and ASLR | Tutorial | https://www.corelan.be/index.php/2009/09/21/exploit-writing-tutorial-part-6-bypassing-stack-cookies-safeseh-hw-dep-and-aslr/ |
+| Bypassing ASLR | Paper | http://web.archive.org/web/20171015120748/https://www.exploit-db.com/docs/18744.pdf |
+
+
+###Network Attacks
+| Name | Type | Link |
+| ----- | ----- | --- |
+| TCP Session Hijacking | Paper | https://www.exploit-db.com/papers/13587 |
+| [Muts] Cisco SNMP Configuration Attack with GRE Tunnel | Paper | https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=50318646-6402-48f0-82db-25d00ac3d76c&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments |
+| Hacking Networks with SNMP | Blog | https://web.archive.org/web/20180808174050/https://0x41.no/hacking-networks-with-snmp/ |
+| Bypassing Router's Access Control List | Blog | https://securityshards.wordpress.com/2016/02/05/bypassing-routers-access-control-list-acl/ |
+
+
+###Case Studies
+| Name | Type | Link |
+| ----- | ----- | --- |
+| [Muts] From Bug to 0-Day | Presentation | https://www.youtube.com/watch?v=axTthxE-z6A |
+| [Muts] Bypassing Cisco SNMP Access Lists Using Spoofed SNMP Requests | Blog | https://web.archive.org/web/20051024151559/http://new.remote-exploit.org/index.php/SNMP_Spoof |
 
 
 
-### Exploit Development
-| Order | Name | Type | Link |
-|--- | ----- | ----- | --- |
-| 1 | DEFCON 16: BackTrack Foo - From bug to 0day | Presentation | https://www.youtube.com/watch?v=gHISpAZiAm0 | 
-| 2 | Corelan Exploit Writing Tutorial part 1: Stack Based Overflows | Blog | http://www.corelan.be/index.php/2009/07/19/exploit-writing-tutorial-part-1-stack-based-overflows/ | 
-| 3 | Corelan Exploit Writing Tutorial part 2: Stack Based Overflows | Blog |  http://www.corelan.be/index.php/2009/07/23/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-2/ | 
-| 4 | Corelan Exploit Writing Tutorial part 3: SEH Based Exploits | Blog| http://www.corelan.be/index.php/2009/07/25/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-3-seh/ | 
-| 5 | Corelan Exploit Writing Tutorial part 3b: SEH Based Exploits | Blog | http://www.corelan.be/index.php/2009/07/28/seh-based-exploit-writing-tutorial-continued-just-another-example-part-3b/ | 
-| 6 | Corelan Exploit Writing Tutorial part 4: From Exploit to Metasploit | Blog | http://www.corelan.be/index.php/2009/08/12/exploit-writing-tutorials-part-4-from-exploit-to-metasploit-the-basics/ | 
-| 7 | Corelan Exploit Writing Tutorial part 5: How debugger modules & plugins can speed up basic exploit development | Blog  | http://www.corelan.be/index.php/2009/09/05/exploit-writing-tutorial-part-5-how-debugger-modules-plugins-can-speed-up-basic-exploit-development/ | 
-| 8 | Corelan Exploit Writing Tutorial part 6: Bypassing Stack Cookies, SafeSeh, SEHOP, HW DEP and ASLR | Blog  | http://www.corelan.be/index.php/2009/09/21/exploit-writing-tutorial-part-6-bypassing-stack-cookies-safeseh-hw-dep-and-aslr/ | 
-| 9 | Corelan Exploit Writing Tutorial part 7: Unicode from 0x00410041 to calc | Blog | http://www.corelan.be/index.php/2009/11/06/exploit-writing-tutorial-part-7-unicode-from-0x00410041-to-calc/ | 
-| 10 | Corelan Exploit Writing Tutorial part 8: Win32 Egg Hunting | Blog  | http://www.corelan.be/index.php/2010/01/09/exploit-writing-tutorial-part-8-win32-egg-hunting/ | 
-| 11 | Corelan Exploit Writing Tutorial part 9: Introduction to Win32 shellcoding | Blog | http://www.corelan.be/index.php/2010/02/25/exploit-writing-tutorial-part-9-introduction-to-win32-shellcoding/ | 
-| 12 | Mona py : The Exploit Writer's Swiss Army Knife | Presentation | https://www.youtube.com/watch?v=y2zrEAwmdws | 
-| 13 | Eliminating the bad characters in your Exploit | Presentation | https://www.youtube.com/watch?v=IOjl3tU1Ht8 | 
-| 14 | Understanding Windows Shellcode | Paper | http://www.hick.org/code/skape/papers/win32-shellcode.pdf |
-| 15 | Safely Searching Process Virtual Address Space | Paper | http://www.hick.org/code/skape/papers/egghunt-shellcode.pdf |
+### Encoding, Restrictions, Bad Characters, and Other Exploit Development Resources
+| Name | Type | Link |
+| ----- | ----- | --- | 
+| [Corelan] Exploit Writing #4: From Exploit to Metasploit | Tutorial | http://www.corelan.be/index.php/2009/08/12/exploit-writing-tutorials-part-4-from-exploit-to-metasploit-the-basics/ |
+| [Corelan] Exploit Writing #7: Unicode from 0x00410041 to calc | Tutorial | http://www.corelan.be/index.php/2009/11/06/exploit-writing-tutorial-part-7-unicode-from-0x00410041-to-calc/ | 
+| [FuzzySec] Windows Exploit Dev #5: Unicode 0x00410041 | Tutorial | https://www.fuzzysecurity.com/tutorials/expDev/5.html |
+| [SecuritySift] Windows Exploit Dev #7: Unicode Buffer Overflows | Tutorial  | https://www.securitysift.com/windows-exploit-development-part-7-unicode-buffer-overflows/ |
+| Eliminating the bad characters in your Exploit | Presentation | https://www.youtube.com/watch?v=IOjl3tU1Ht8 | 
+
 
 ### Practical
-| Order | Name | Type | Link |
-|--- | ----- | ----- | --- |
-| 1 | Vulnserver | Lab | https://github.com/stephenbradshaw/vulnserver | 
-| 2 | Fuzzysecurity Part 1: Introduction to Exploit Development | Tutorial | http://www.fuzzysecurity.com/tutorials/expDev/1.html | 
-| 3 | Fuzzysecurity Part 2: Saved Return Pointer Overflows | Tutorial | http://www.fuzzysecurity.com/tutorials/expDev/2.html | 
-| 4 | Fuzzysecurity Part 3: Part 3: Structured Exception Handler (SEH) | Tutorial | http://www.fuzzysecurity.com/tutorials/expDev/3.html | 
-| 5 | Fuzzysecurity Part 4: Egg Hunters | Tutorial | http://www.fuzzysecurity.com/tutorials/expDev/4.html | 
-| 6 | Fuzzysecurity Part 5: Unicode 0x00410041 | Tutorial | http://www.fuzzysecurity.com/tutorials/expDev/5.html | 
-| 7 | Fuzzysecurity Part Part 6: Writing W32 shellcode | Tutorial | http://www.fuzzysecurity.com/tutorials/expDev/6.html | 
-| 8 | SecuritySift Windows Exploit Development – Part 1: The Basics | Tutorial | https://www.securitysift.com/windows-exploit-development-part-1-basics/
-| 9 | SecuritySift Windows Exploit Development – Part 2: StackOverflow | Tutorial | https://www.securitysift.com/windows-exploit-development-part-2-intro-stack-overflow/
-| 10 | SecuritySift Windows Exploit Development – Part 3: Changing Offsets and Rebased Modules | Tutorial | https://www.securitysift.com/windows-exploit-development-part-3-changing-offsets-and-rebased-modules/
-| 11 | SecuritySift Windows Exploit Development – Part 4: Locating Shellcode Jumps) | Tutorial | https://www.securitysift.com/windows-exploit-development-part-4-locating-shellcode-jumps/
-| 12 | SecuritySift Windows Exploit Development – Part 5: Locating Shellcode Egghunting | Tutorial | https://www.securitysift.com/windows-exploit-development-part-5-locating-shellcode-egghunting/
-| 13 | SecuritySift Windows Exploit Development – Part 6: SHE Exploits | Tutorial | https://www.securitysift.com/windows-exploit-development-part-6-seh-exploits/
-| 14 | SecuritySift Windows Exploit Development – Part 7: Unicode Buffer Overflows | Tutorial  | https://www.securitysift.com/windows-exploit-development-part-7-unicode-buffer-overflows/
+| Name | Type | Link |
+| ----- | ----- | --- |
+| Vulnserver | Lab | https://github.com/stephenbradshaw/vulnserver | 
+| Introducing Vulnserver | Tutorial | http://grey-corner.blogspot.com/2010/12/introducing-vulnserver.html |
+| [Exploit-Exercises] Protostar | Lab | https://www.vulnhub.com/entry/exploit-exercises-protostar-v2,32/ |
+| [Exploit-Exercises] Protostar | Lab (Challenges) | https://web.archive.org/web/20180322220122/https://exploit-exercises.com/protostar/ |
+| [Exploit-Exercises] Fusion | Lab | https://www.vulnhub.com/entry/exploit-exercises-fusion-v2,15/ |
+| [Exploit-Exercises] Fusion | Lab (Challenges) | https://web.archive.org/web/20180820234507/https://exploit-exercises.com/fusion/ |
+| [OverTheWire] Narnia | Lab | https://overthewire.org/wargames/narnia/ |
 
-### Network Security
-| Order | Name | Type | Link |
-|--- | ----- | ----- | --- |
-| 1 | Cisco SNMP configuration attack with a GRE tunnel | Blog | https://www.symantec.com/connect/articles/cisco-snmp-configuration-attack-gre-tunnel | 
-| 2 | Bypassing Cisco SNMP access lists using Spoofed SNMP Requests| Blog | http://new.remote-exploit.org/index.php/SNMP_Spoof | 
-| 3 | Bypassing Router’s Access Control List (ACL) | Blog | https://securityshards.wordpress.com/2016/02/05/bypassing-routers-access-control-list-acl/ | 
+
+###Windows Internals (Not required, but definitely helpful)
+| Name | Type | Link |
+| ----- | ----- | --- |
+| Windows Internals Part 1 (7th Ed.) | Book | https://www.amazon.com/dp/0735684189/ref=sr_1_1?crid=2Y8M5D8WSTRAO&dchild=1&keywords=windows+internals&qid=1595526058&sprefix=windows+intern%2Caps%2C267&sr=8-1 |
+| Windows Internals Part 1 (6th Ed.) | Book | https://www.amazon.com/Windows-Internals-Part-Developer-Reference/dp/0735648735/ref=sr_1_6?crid=2Y8M5D8WSTRAO&dchild=1&keywords=windows+internals&qid=1595526058&sprefix=windows+intern%2Caps%2C267&sr=8-6 |
+| Windows Internals Part 2 (6th Ed.) | Book | https://www.amazon.com/Windows-Internals-Part-Developer-Reference/dp/0735665877/ref=sr_1_5?crid=2Y8M5D8WSTRAO&dchild=1&keywords=windows+internals&qid=1595526058&sprefix=windows+intern%2Caps%2C267&sr=8-5 |
+| [Pluralsight] Windows Internals Course Part 1 | Video Series | https://app.pluralsight.com/library/courses/windows-internals/table-of-contents |
+| [Pluralsight] Windows Internals Course Part 2 | Video Series | https://app.pluralsight.com/library/courses/windows-internals2/table-of-contents |
+| [Pluralsight] Windows Internals Course Part 3 | Video Series | https://app.pluralsight.com/library/courses/windows-internals-3/table-of-contents |
 
 
 
 
 ### Misc/Extra
-| Order | Name | Type | Link |
-|--- | ----- | ----- | --- |
-| 1 | Mona.py The Manual | Cheatsheet | https://www.corelan.be/index.php/2011/07/14/mona-py-the-manual/r | 
-| 2 | Windows Reverse Shell Shellcode I | log | http://sh3llc0d3r.com/windows-reverse-shell-shellcode-i/ |
-| 3 | hellcoding for Linux and Windows Tutorial | Blog |http://www.vividmachines.com/shellcode/shellcode.html#ws |
-| 4 | peCloak.py – An Experiment in AV Evasion | Tool | https://www.securitysift.com/pecloak-py-an-experiment-in-av-evasion/ |
-| 5 | EggSandwich – An Egghunter with Integrity | Tool | https://www.securitysift.com/eggsandwich-egghunter-integrity/ |
-| 6 | Live Demo from Backtrack to the MAX 1/5 | Tool | https://www.youtube.com/watch?v=kwq5VQj3Ils |
-| 7 | Live Demo from Backtrack to the MAX 2/5 | Tool | https://www.youtube.com/watch?v=ykfHy2lX88c |
-| 8 | Live Demo from Backtrack to the MAX 3/5 | Tool | https://www.youtube.com/watch?v=IWf7UM7qX0M |
-| 9 | Live Demo from Backtrack to the MAX 4/5 | Tool | https://www.youtube.com/watch?v=azepnwdVfyU |
-| 10 | Live Demo from Backtrack to the MAX 5/5 | Tool | https://www.youtube.com/watch?v=6gmAoW1mtYg |
->>>>>>> master-holder
+| Name | Type | Link |
+| ----- | ----- | --- |
+| [Muts] Live Demo from Backtrack to the MAX 1/5 | Presentation | https://www.youtube.com/watch?v=kwq5VQj3Ils |
+| [Muts] Live Demo from Backtrack to the MAX 2/5 | Presentation | https://www.youtube.com/watch?v=ykfHy2lX88c |
+| [Muts]Live Demo from Backtrack to the MAX 3/5 | Presentation | https://www.youtube.com/watch?v=IWf7UM7qX0M |
+| [Muts] Live Demo from Backtrack to the MAX 4/5 | Presentation | https://www.youtube.com/watch?v=azepnwdVfyU |
+| [Muts] Live Demo from Backtrack to the MAX 5/5 | Presentation | https://www.youtube.com/watch?v=6gmAoW1mtYg |
+| [OffSec] Quickzip Stack BOF 0-Day: A Box of Chocolates | Blog | https://www.offensive-security.com/vulndev/quickzip-stack-bof-0day-a-box-of-chocolates/ |
+
