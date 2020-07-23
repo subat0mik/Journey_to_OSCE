@@ -208,3 +208,4 @@ The following table shows notes, courses, challenges, and tutorials that can be 
 | [Muts] Live Demo from Backtrack to the MAX 5/5 | Presentation | https://www.youtube.com/watch?v=6gmAoW1mtYg |
 | [OffSec] Quickzip Stack BOF 0-Day: A Box of Chocolates | Blog | https://www.offensive-security.com/vulndev/quickzip-stack-bof-0day-a-box-of-chocolates/ |
 
+[Snoopy]: https://github.com/snoopysecurity
