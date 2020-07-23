@@ -1,4 +1,4 @@
-# OSCE PREP
+# The Journey to OSCE
 
 This repository contains a list of free or inexpensive resources that can be used as preparation for Offensive Security's [Cracking the Perimeter (CTP)](https://www.offensive-security.com/information-security-training/cracking-the-perimeter/) course and [OSCE](https://www.offensive-security.com/information-security-certifications/osce-offensive-security-certified-expert/) certification.
 
@@ -34,7 +34,7 @@ The following table shows notes, courses, challenges, and tutorials that can be 
 | Web Application Hacker's Handbook | Book | https://www.amazon.com/Web-Application-Hackers-Handbook-Exploiting/dp/1118026470/ref=sr_1_1?crid=TR4RN22XANB0&dchild=1&keywords=web+app+hackers+handbook&qid=1595526654&sprefix=web+app+hackers%2Caps%2C294&sr=8-1 |
 
 
-### AV Bypass / Evasion:
+### AV Bypass / Evasion
 
 | Name | Type | Link |
 | ----- | ----- | --- |
@@ -44,7 +44,7 @@ The following table shows notes, courses, challenges, and tutorials that can be 
 | [SecuritySift] peCloak.py - An Experiment in AV Evasion | Blog | https://www.securitysift.com/pecloak-py-an-experiment-in-av-evasion/ |
 
 
-### Backdooring PEs:
+### Backdooring PEs
 
 | Name | Type | Link |
 | ----- | ----- | --- |
