@@ -96,7 +96,7 @@ The following table shows notes, courses, challenges, and tutorials that can be 
 | Boofuzz – A helpful guide (OSCE – CTP) | Blog | https://zeroaptitude.com/zerodetail/fuzzing-with-boofuzz/	|
 
 
-###Stack Based Overflow:
+### Stack Based Overflow:
 | Name | Type | Link |
 | ----- | ----- | --- |
 | [FuzzySec] Windows Exploit Dev #1: Intro | Tutorial | https://www.fuzzysecurity.com/tutorials/expDev/1.html |
@@ -112,7 +112,7 @@ The following table shows notes, courses, challenges, and tutorials that can be 
 | [InfoSec Institute]Stack Based Buffer Overflow #3: Adding Shellcode | Tutorial | http://resources.infosecinstitute.com/stack-based-buffer-overflow-tutorial-part-2-exploiting-the-stack-overflow/ |
 
 
-###Structured Exception Handling (SEH) Overwrite:
+### Structured Exception Handling (SEH) Overwrite:
 | Name | Type | Link |
 | ----- | ----- | --- |
 | [Corelan] Exploit Writing #3: SEH | Tutorial | https://www.corelan.be/index.php/2009/07/25/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-3-seh/ |
@@ -127,7 +127,7 @@ The following table shows notes, courses, challenges, and tutorials that can be 
 | [Vulnserver] Exploiting GMON Command via SEH and Egghunter | Blog | https://captmeelo.com/exploitdev/osceprep/2018/06/30/vulnserver-gmon.html |
 
 
-###Egghunting
+### Egghunting
 | Name | Type | Link |
 | ----- | ----- | --- |
 | [Skape] Safely Searching Process Virtual Address Space | Paper | https://web.archive.org/web/20061010194043/http://www.hick.org/code/skape/papers/egghunt-shellcode.pdf |
@@ -139,14 +139,14 @@ The following table shows notes, courses, challenges, and tutorials that can be 
 | [SecuritySift] EggSandwich - An Egghunter with Integrity | Blog | https://www.securitysift.com/eggsandwich-egghunter-integrity/ |
 
 
-###Address Space Layout Randomization (ASLR) Bypass
+### Address Space Layout Randomization (ASLR) Bypass
 | Name | Type | Link |
 | ----- | ----- | --- |
 | [Corelan] Exploit Writing #6: Bypassing Stack Cookies, SafeSEH, SEHOP, HW DEP, and ASLR | Tutorial | https://www.corelan.be/index.php/2009/09/21/exploit-writing-tutorial-part-6-bypassing-stack-cookies-safeseh-hw-dep-and-aslr/ |
 | Bypassing ASLR | Paper | http://web.archive.org/web/20171015120748/https://www.exploit-db.com/docs/18744.pdf |
 
 
-###Network Attacks
+### Network Attacks
 | Name | Type | Link |
 | ----- | ----- | --- |
 | TCP Session Hijacking | Paper | https://www.exploit-db.com/papers/13587 |
@@ -155,7 +155,7 @@ The following table shows notes, courses, challenges, and tutorials that can be 
 | Bypassing Router's Access Control List | Blog | https://securityshards.wordpress.com/2016/02/05/bypassing-routers-access-control-list-acl/ |
 
 
-###Case Studies
+### Case Studies
 | Name | Type | Link |
 | ----- | ----- | --- |
 | [Muts] From Bug to 0-Day | Presentation | https://www.youtube.com/watch?v=axTthxE-z6A |
@@ -185,7 +185,7 @@ The following table shows notes, courses, challenges, and tutorials that can be 
 | [OverTheWire] Narnia | Lab | https://overthewire.org/wargames/narnia/ |
 
 
-###Windows Internals (Not required, but definitely helpful)
+### Windows Internals (Not required, but definitely helpful)
 | Name | Type | Link |
 | ----- | ----- | --- |
 | Windows Internals Part 1 (7th Ed.) | Book | https://www.amazon.com/dp/0735684189/ref=sr_1_1?crid=2Y8M5D8WSTRAO&dchild=1&keywords=windows+internals&qid=1595526058&sprefix=windows+intern%2Caps%2C267&sr=8-1 |
